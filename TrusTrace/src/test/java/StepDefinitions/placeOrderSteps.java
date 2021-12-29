@@ -52,10 +52,9 @@ public class placeOrderSteps {
 	    
 	}
 
-	@And("user enters User information")
-	public void user_enters_user_information() {
-	    userInfoPage.userInformation();
-	}
+       @When("user enters User information First name as {string}, Last Name as {string} and zipcode as  {string}")
+       public void user_enters_user_information_first_name_as_last_name_as_and_zipcode_as(String firstName, String lastName, String zipCode) {
+               userInfoPage.userInformation(firstName,lastName,zipCode);
 
 	@And("user Clicks on continue button")
 	public void user_clicks_on_continue_button() {
