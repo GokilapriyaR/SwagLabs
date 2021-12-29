@@ -18,11 +18,10 @@ public class UserInformationPage {
 		this.driver = driver;
 	}
 	
-	public void userInformation() {
-		driver.findElement(firstName).sendKeys("james");
-		driver.findElement(lastName).sendKeys("Potter");
-		driver.findElement(zipCode).sendKeys("123456");
-	}
+	public void userInformation(String FN, String LN, String ZC) {
+		driver.findElement(firstName).sendKeys(FN);
+		driver.findElement(lastName).sendKeys(LN);
+		driver.findElement(zipCode).sendKeys(ZC);
 	
 	public void continueBtn() {
 		driver.findElement(continueBtn).click();
