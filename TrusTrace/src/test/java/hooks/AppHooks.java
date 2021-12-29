@@ -33,10 +33,10 @@ public class AppHooks {
 		driver = driverFactory.init_driver(browserName);
 	}
 	
-/*	@After(order = 0)
+	@After(order = 0)
 	public void quitDriver() {
 		driver.quit();
-	}  */
+	}  
 	
 	@After(order = 1)
 	public void teardown(Scenario scenario) {
